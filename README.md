@@ -5,3 +5,4 @@
 # In this part (y_predicted = m_curr * x + b_curr) this is a pattern to calculate [Y] which is  [Y_predicted]
 # There are the patterns to calculate M-Derivate and B-Derivate """ md = -(2/n)*sum(x*(y - y_predicted)) , bd = -(2/n)*sum(y - y_predicted) """
 # Here i calculate my [m] an [b] """ m_curr = m_curr - learning_rate * md , b_curr = b_curr - learning_rate * bd """
+# cost = """(1/n)*sum([value ** 2 for value in (y - y_predicted)])""" it is calculate from the pattern 
